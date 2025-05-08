@@ -1,0 +1,33 @@
+.component-button {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc; /* Add a border for better visual separation */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 1.5rem;
+  padding: 10px; /* Add padding for spacing */
+  cursor: pointer; /* Indicate that it's clickable */
+  transition: background-color 0.2s ease; /* Add a smooth transition for hover effect */
+}
+
+.component-button:hover {
+  background-color: #d0d0d0; /* Change background color on hover */
+}
+
+.component-button.wide {
+  grid-column: span 2; /* Occupy two columns */
+}
+
+.component-button.orange {
+  background-color: #f5923e;
+  color: white;
+}
+
+.component-button button {
+  /* Removed unnecessary styles */
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}

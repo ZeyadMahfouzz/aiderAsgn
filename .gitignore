@@ -1,0 +1,4 @@
+aider-env
+.env
+.aider*
+node_modules

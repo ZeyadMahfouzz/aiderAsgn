@@ -1,0 +1,86 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
+
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode {
+  background-color: #333; /* Dark gray background for dark mode */
+  color: #fff; /* White text for dark mode */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github-fork-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .github-fork-ribbon:before {
+  background-color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  .github-fork-ribbon {
+    display: none;
+  }
+}
+
+/* Style for the toggle button */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.toggle-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add styles for dark mode to other elements as needed */
+.component-app.dark-mode {
+  background-color: #333; /* Dark gray background for dark mode */
+  color: #fff; /* White text for dark mode */
+}
+
+.component-app.dark-mode .component-button-panel {
+  background-color: #444; /* Example: Darker background for button panel */
+}
+
+.component-app.dark-mode .component-button {
+  background-color: #555; /* Example: Darker background for buttons */
+  color: #eee; /* Example: Lighter text color for buttons */
+}
+
+.component-app.dark-mode .component-display {
+  background-color: #444; /* Example: Darker background for display */
+  color: #eee; /* Example: Lighter text color for display */
+}
+
+.component-app.dark-mode h3 {
+  color: #eee; /* Example: Lighter text color for headings */
+}
+
+.component-app.dark-mode li {
+  color: #eee; /* Example: Lighter text color for list items */
+}

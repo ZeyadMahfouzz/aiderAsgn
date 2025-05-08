@@ -1,0 +1,33 @@
+.component-display {
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px; /* Set a width for the display */
+  height: 100px; /* Set a height for the display */
+}
+
+.display-value {
+  font-size: 2em;
+  text-align: right;
+  height: 60%; /* Adjust height to take up most of the display */
+  display: flex;
+  align-items: flex-end; /* Align value to the bottom */
+}
+
+.display-history {
+  font-size: 0.8em;
+  overflow-y: auto;
+  max-height: 40px; /* Limit the height of the history */
+  height: 40%; /* Adjust height to take up remaining space */
+}
+
+.display-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.display-history li {
+  padding: 2px 0;
+}
